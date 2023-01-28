@@ -4,11 +4,11 @@ document.addEventListener('DOMContentLoaded', (e) => {
     
     const movieDB = {
         movies: [
-            "Логан",
-            "Лига справедливости",
-            "Ла-ла лэнд",
-            "Одержимость",
-            "Скотт Пилигрим против..."
+            "логан",
+            "лига справедливости",
+            "ла-ла лэнд",
+            "одержимость",
+            "скотт Пилигрим против..."
         ]
     };
 
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
                     filmName = filmName.slice(0, 21) + '...';
                 }
         
-                movieDB.movies.push(filmName);
+                movieDB.movies.push(filmName.toLowerCase());
                 if (checkbox.checked) {
                     console.log("Добавлен любимый фильм. ");
                 }
